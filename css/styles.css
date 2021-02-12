@@ -135,6 +135,10 @@ footer {
   opacity: 0.5;
 }
 
+.number {
+    display: none;
+}
+
 /* @supports (grid-template-columns: subgrid) { */
   @media (min-width: 800px) {
     body {
@@ -150,6 +154,25 @@ footer {
         minmax(1em, 1fr);
       gap: 2em;
       position: relative;
+    }
+
+    .number {
+        display: grid;
+        grid-template-columns:
+        minmax(1em, 1fr)
+        minmax(15rem, 30rem);
+        gap: 2em;
+        position: absolute;
+    }
+
+    .number span {
+        grid-column: 1 / 2;
+        font-size: 30rem;
+        position: absolute;
+        top: .2rem;
+        color: var(--clr-bg-light);
+        z-index: -1;
+        left: -10rem;
     }
 
     header {
@@ -183,6 +206,7 @@ footer {
       z-index: -2;
       /* transition: transform .6s ease; */
     }
+
 
     .title {
       grid-column: 1 / 3;
