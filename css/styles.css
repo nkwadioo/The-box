@@ -170,7 +170,7 @@ footer {
         font-size: 30rem;
         position: absolute;
         top: .2rem;
-        color: var(--clr-bg-light);
+        color: #3b3b3b61;
         z-index: -1;
         left: -10rem;
     }
