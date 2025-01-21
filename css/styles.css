@@ -139,6 +139,15 @@ footer {
     display: none;
 }
 
+.description {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  max-width: 45ch;
+  text-shadow: 1px 0px 12px hsl(0 59% 6% / 1), -16px 0px 5px hsl(0 59% 6% / 1), 2px 0px 0px hsl(0 59% 6% / 1);
+  font-weight: 500;
+  color: hsl(0 59% 98% / 1);
+}
+
 
 @media (min-width: 126px) {
     .secondary-images {
@@ -175,7 +184,7 @@ footer {
 }
 
 /* @supports (grid-template-columns: subgrid) { */
-  @media (min-width: 800px) {
+  @media (min-width: 650px) {
     body {
       margin: 0;
       position: relative;
